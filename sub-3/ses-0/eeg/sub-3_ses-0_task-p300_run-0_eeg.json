@@ -1,0 +1,47 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products 128-channel amplifier",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 250.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "bandpass filter, notch filter, downsampling, artifact rejection"
+		}
+	},
+	"RecordingDuration": 2008.996,
+	"RecordingType": "continuous",
+	"EEGReference": "nose",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 60,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "Brain Products 128-channel amplifier",
+	"SoftwareVersions": "Matlab",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.1,
+			"high_cutoff_hz": 250.0,
+			"Type": "Chebyshev II order 8 (for visual inspection: 30 Hz pass, 42 Hz stop, 50 dB damping)"
+		},
+		"Notch": {
+			"CutoffFrequency": [
+				50
+			]
+		}
+	},
+	"TaskDescription": "[oddball] Offline auditory oddball task using spatial location of auditory stimuli as discriminating cue. Frontal five speakers used (speakers 1,2,3,7,8) with 45 degree spacing. Three conditions tested: C300 (300ms ISI), C175 (175ms ISI), C300s (300ms ISI, single speaker). Each stimulus was unique 40ms complex sound from bandpass filtered white noise with tone overlay. Trial duration: 0.8s, ISI: 300.0ms.",
+	"Instructions": "Subjects asked to mentally count target stimulations or respond by keypress (condition Cr). Minimize eye movements and muscle contractions. Target direction indicated prior to each block visually and by presenting stimulus from that location.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Berlin, Germany",
+	"InstitutionalDepartmentName": "Machine Learning Department",
+	"CapManufacturer": "n/a",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "A new auditory multi-class brain-computer interface paradigm using spatial hearing as an informative cue",
+	"MISCChannelCount": 0
+}

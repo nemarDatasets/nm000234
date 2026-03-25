@@ -1,0 +1,47 @@
+{
+	"Name": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-NC-ND-4.0",
+	"Authors": [
+		"Martijn Schreuder",
+		"Benjamin Blankertz",
+		"Michael Tangermann"
+	],
+	"Funding": [
+		"European ICT Programme Project FP7-224631",
+		"European ICT Programme Project FP7-216886",
+		"Deutsche Forschungsgemeinschaft (DFG) MU 987/3-1",
+		"Bundesministerium f\u00fcr Bildung und Forschung (BMBF) FKZ 01IB001A",
+		"Bundesministerium f\u00fcr Bildung und Forschung (BMBF) FKZ 01GQ0850",
+		"FP7-ICT PASCAL2 Network of Excellence ICT-216886"
+	],
+	"EthicsApprovals": [
+		"Ethics Committee of the Charit\u00e9 University Hospital (number EA4/073/09)"
+	],
+	"ReferencesAndLinks": [
+		"10.3389/fnins.2011.00112"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.3389/fnins.2011.00112"
+		}
+	],
+	"Keywords": [
+		"auditory BCI",
+		"P300",
+		"spatial hearing",
+		"multi-class",
+		"oddball paradigm"
+	],
+	"PublicationYear": 2010
+}

@@ -1,0 +1,174 @@
+_dataset:
+  class: BNCI2015_009
+  code: BNCI2015-009
+  doi: 10.3389/fnins.2011.00112
+  interval:
+  - 0
+  - 0.8
+  n_subjects: 21
+  paradigm: p300
+acquisition:
+  auxiliary_channels:
+    eog_channels: 2
+    eog_type:
+    - bipolar
+    has_eog: true
+  channel_types:
+    eeg: 60
+    eog: 2
+  filters: 0.1-250 Hz analog bandpass
+  hardware: Brain Products 128-channel amplifier
+  line_freq: 50.0
+  montage: 10-20
+  n_channels: 60
+  reference: nose
+  sampling_rate: 250.0
+  sensor_type: Ag/AgCl electrodes
+  software: Matlab
+bci_application:
+  applications:
+  - speller
+  - communication
+  environment: laboratory
+cross_validation:
+  cv_method: cross-validation
+  evaluation_type:
+  - offline
+data_processed: true
+data_structure:
+  n_blocks: 50
+  n_trials: varied by condition
+  trials_context: 'BCI experiments: C300 (50 trials × 75 subtrials = 3750 subtrials), C175 (40 trials × 75 subtrials = 3000
+    subtrials), C300s (20 trials × 75 subtrials = 1500 subtrials). Physiological experiments: C1000 (32 trials × 80 subtrials
+    = 2560 subtrials), Cr (576-768 subtrials)'
+documentation:
+  associated_paper_doi: 10.3389/fnins.2011.00112
+  contact_info:
+  - martijn@cs.tu-berlin.de
+  country: Germany
+  description: A new auditory multi-class brain-computer interface paradigm using spatial hearing as an informative cue
+  doi: 10.1371/journal.pone.0009813
+  ethics_approval:
+  - Ethics Committee of the Charité University Hospital (number EA4/073/09)
+  funding:
+  - European ICT Programme Project FP7-224631
+  - European ICT Programme Project FP7-216886
+  - Deutsche Forschungsgemeinschaft (DFG) MU 987/3-1
+  - Bundesministerium für Bildung und Forschung (BMBF) FKZ 01IB001A
+  - Bundesministerium für Bildung und Forschung (BMBF) FKZ 01GQ0850
+  - FP7-ICT PASCAL2 Network of Excellence ICT-216886
+  institution: Berlin Institute of Technology
+  institution_address: Berlin, Germany
+  institution_department: Machine Learning Department
+  investigators:
+  - Martijn Schreuder
+  - Benjamin Blankertz
+  - Michael Tangermann
+  keywords:
+  - auditory BCI
+  - P300
+  - spatial hearing
+  - multi-class
+  - oddball paradigm
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2010
+  repository: BNCI Horizon
+  senior_author: Michael Tangermann
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 2
+    Target: 1
+  feedback_type: none
+  instructions: Subjects asked to mentally count target stimulations or respond by keypress (condition Cr). Minimize eye movements
+    and muscle contractions. Target direction indicated prior to each block visually and by presenting stimulus from that
+    location.
+  mode: offline
+  n_classes: 2
+  paradigm: p300
+  primary_modality: auditory
+  stimulus_modalities:
+  - auditory
+  stimulus_type: auditory_spatial
+  study_design: 'Offline auditory oddball task using spatial location of auditory stimuli as discriminating cue. Frontal five
+    speakers used (speakers 1,2,3,7,8) with 45 degree spacing. Three conditions tested: C300 (300ms ISI), C175 (175ms ISI),
+    C300s (300ms ISI, single speaker). Each stimulus was unique 40ms complex sound from bandpass filtered white noise with
+    tone overlay.'
+  study_domain: BCI
+  synchronicity: synchronous
+  task_type: oddball
+  tasks:
+  - spatial_auditory_oddball
+  trial_duration: 0.8
+file_format: gdf
+paradigm_specific:
+  detected_paradigm: p300
+  isi_ms: 300.0
+  n_repetitions: 15
+  n_targets: 5
+participants:
+  age_max: 55
+  age_mean: 30.3
+  age_min: 22
+  bci_experience: mixed
+  clinical_population: Healthy
+  gender:
+    female: 4
+    male: 6
+  handedness: unknown
+  health_status: patients
+  n_subjects: 21
+  species: human
+performance:
+  accuracy_percent: 90.0
+  best_subject_accuracy_percent: 100.0
+  best_subject_itr_bits_per_min: 25.2
+  c300s_accuracy_percent: 70.0
+  itr_bits_per_min: 17.39
+preprocessing:
+  artifact_methods:
+  - threshold-based artifact rejection
+  bandpass:
+    high_cutoff_hz: 250.0
+    low_cutoff_hz: 0.1
+  data_state: filtered
+  downsampled_to_hz: 100.0
+  epoch_window:
+  - -0.15
+  - 0.8
+  filter_type: 'Chebyshev II order 8 (for visual inspection: 30 Hz pass, 42 Hz stop, 50 dB damping)'
+  highpass_hz: 0.1
+  lowpass_hz: 250.0
+  notch_hz:
+  - 50
+  notes: 'Raw data acquired at 1000 Hz. For visual inspection: low-pass filtered with order 8 Chebyshev II filter (30 Hz pass,
+    42 Hz stop, 50 dB damping) applied forward and backward to minimize phase shifts, then downsampled to 100 Hz. For classification:
+    same filter applied causally (forward only) for online portability. Artifact rejection used simple threshold method: subtrials
+    with deflection >70 µV over ocular channels compared to baseline were rejected.'
+  preprocessing_applied: true
+  preprocessing_steps:
+  - bandpass filter
+  - notch filter
+  - downsampling
+  - artifact rejection
+  re_reference: nose
+runs_per_session: 2
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - LDA
+  feature_extraction:
+  - ROC-separability-index
+  frequency_bands:
+    analyzed_range:
+    - 0.1
+    - 250.0
+tags:
+  modality:
+  - Auditory
+  pathology:
+  - Healthy
+  type:
+  - P300
