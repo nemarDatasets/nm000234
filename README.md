@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000234-blue)](https://doi.org/10.82901/nemar.nm000234)
+
 # BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset
 
 BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset.
