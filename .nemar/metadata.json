@@ -1,0 +1,117 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Martijn Schreuder": {},
+    "Benjamin Blankertz": {},
+    "Michael Tangermann": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/fnins.2011.00112",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000234",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000234",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1371/journal.pone.0009813",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "FP7-ICT PASCAL2 Network of Excellence ICT-216886"
+    },
+    {
+      "funder_name": "European Commission",
+      "award_number": "FP7-224631"
+    },
+    {
+      "funder_name": "European Commission",
+      "award_number": "FP7-216886"
+    },
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft",
+      "award_number": "MU 987/3-1"
+    },
+    {
+      "funder_name": "Bundesministerium für Bildung und Forschung",
+      "award_number": "01IB001A"
+    },
+    {
+      "funder_name": "Bundesministerium für Bildung und Forschung",
+      "award_number": "01GQ0850"
+    }
+  ],
+  "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "4.9 GB (43 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. The dataset includes 60-channel EEG data acquired at 250 Hz (downsampled to 100 Hz) with preprocessed P300 event-related potentials elicited by target and non-target auditory stimuli presented from five spatially distributed speakers. This dataset demonstrates high classification accuracy (90% mean, up to 100% for best subjects) and information transfer rates suitable for auditory BCI-based communication and speller applications.",
+  "methods_description": "EEG data were acquired using a Brain Products 128-channel amplifier at 250 Hz sampling rate from 60 channels with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Online analog bandpass filtering (0.1-250 Hz) was applied during acquisition. Preprocessing included offline bandpass filtering (0.1-250 Hz, Chebyshev II order 8), 50 Hz notch filtering, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels). Subjects performed an offline auditory oddball task with three conditions varying inter-stimulus interval (300 ms, 175 ms) and speaker configuration, responding to target stimuli from designated spatial locations via mental counting or keypress.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "auditory oddball"
+    },
+    {
+      "term": "spatial hearing"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "auditory BCI"
+    },
+    {
+      "term": "multi-class"
+    },
+    {
+      "term": "oddball paradigm"
+    }
+  ],
+  "source_hash": "28e0f442dfd347f21fbc4b2feb8e8aba8f5781b5e885f2e76a283737e72edd25"
+}
