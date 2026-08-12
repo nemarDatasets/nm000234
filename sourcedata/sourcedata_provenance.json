@@ -1,0 +1,120 @@
+{
+ "dataset": "nm000234",
+ "moabb_class": "BNCI2015_009",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2015_009.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/bbci/BNCIHorizon2020-AMUSE",
+ "license": "CC-BY-NC-ND-4.0",
+ "doi": "10.3389/fnins.2011.00112",
+ "naming": "upstream_filenames_restored",
+ "n_files": 21,
+ "total_bytes": 12796787280,
+ "files": [
+  {
+   "file": "AMUSE_VPfar.mat",
+   "bytes": 905168838,
+   "sha256": "e9eca4a8fb048cd04f352a0ab6cb2f325d54619e07f3baeb8568b40ade13f5d5"
+  },
+  {
+   "file": "AMUSE_VPfas.mat",
+   "bytes": 386907832,
+   "sha256": "0d753e368ab874624888698fe23f1ee4f2afc6fcd4611dfb28387a65ce29210b"
+  },
+  {
+   "file": "AMUSE_VPfat.mat",
+   "bytes": 541988121,
+   "sha256": "98c48b956850fa89d4a5f9e0aea4be8626a33c90ee9a9a1848cdb0afec6afc20"
+  },
+  {
+   "file": "AMUSE_VPfau.mat",
+   "bytes": 759468855,
+   "sha256": "c2b6549f5e31225c149ec29919f9b123d8db32e9a6be62f6eccab37179a29142"
+  },
+  {
+   "file": "AMUSE_VPfav.mat",
+   "bytes": 722814161,
+   "sha256": "6d5719d768f2bd35134544a5801b7b7c349b1509094d2b0662b041ce745de117"
+  },
+  {
+   "file": "AMUSE_VPfaw.mat",
+   "bytes": 521488434,
+   "sha256": "6ae7f10fd1d5e74306537823c86f5298c06b54b72d8bc27a2fcc38894a7f97a9"
+  },
+  {
+   "file": "AMUSE_VPfax.mat",
+   "bytes": 1007000179,
+   "sha256": "fcc3f7aa0a275be8833382ea75be75a21e1d418891be0d95d0ed67f85f51c39e"
+  },
+  {
+   "file": "AMUSE_VPfaz.mat",
+   "bytes": 524808659,
+   "sha256": "6ee7e603e441e77129e70f1eea003cb4b6c99221f9c145e8ea39b211a23f1d99"
+  },
+  {
+   "file": "AMUSE_VPfca.mat",
+   "bytes": 673495505,
+   "sha256": "86a982f85721c053b6a4ecd23cf9722de45acb325e01daf3975177d4cc9b9fb6"
+  },
+  {
+   "file": "AMUSE_VPfcb.mat",
+   "bytes": 829625534,
+   "sha256": "2c3cb89fdd4eca400f9c6839a2b6cca48f8a14cc307db0d17653b4681b2d6f4c"
+  },
+  {
+   "file": "AMUSE_VPfcc.mat",
+   "bytes": 435445905,
+   "sha256": "200e4a7d1b93c36fb7b15d47978ba9bdf8ca88835cc04c9723a8a9f8b663c654"
+  },
+  {
+   "file": "AMUSE_VPfcd.mat",
+   "bytes": 478388953,
+   "sha256": "3532ed4117320cb6dddd1129a225e423352c3eac177fc6033f0e14ae0a6400df"
+  },
+  {
+   "file": "AMUSE_VPfce.mat",
+   "bytes": 378659634,
+   "sha256": "3c777ac4e93ef6affedc59633d2cc7b3d7f05ec5477ae34c4da0c5d227177834"
+  },
+  {
+   "file": "AMUSE_VPfcg.mat",
+   "bytes": 745570531,
+   "sha256": "14ed7e45cc408ab8089977a921765a26f8fd817a885ccc46ff014167e5193875"
+  },
+  {
+   "file": "AMUSE_VPfch.mat",
+   "bytes": 679612506,
+   "sha256": "ae82ded30b172df4c9adcbc23d71c11ab2aeb6e9f775f4c78c647aaa57444390"
+  },
+  {
+   "file": "AMUSE_VPfci.mat",
+   "bytes": 347916927,
+   "sha256": "43100fe52614a6eabd69f518ca13b9677c63ea85503af18a04112aa114de7619"
+  },
+  {
+   "file": "AMUSE_VPfcj.mat",
+   "bytes": 775492243,
+   "sha256": "bce71845671d6550f6c2512f796d6d76b4525952d79bc42d762cd209041d15d0"
+  },
+  {
+   "file": "AMUSE_VPfck.mat",
+   "bytes": 613499230,
+   "sha256": "cedf833e9271f0df946f80292a53f755cdbe0a9169ce3d905c599de53d83a858"
+  },
+  {
+   "file": "AMUSE_VPfcl.mat",
+   "bytes": 325735867,
+   "sha256": "96031e541cc4887ea4fb812dccac474ea4c2d4c0ced8c3645f3cc6e4eb9822ec"
+  },
+  {
+   "file": "AMUSE_VPfcm.mat",
+   "bytes": 691676955,
+   "sha256": "e62e9efc7bb59d95b48fc19b8dea3fe5ee8e4beee5994c4dbafdae80dda94e37"
+  },
+  {
+   "file": "AMUSE_VPkw.mat",
+   "bytes": 452022411,
+   "sha256": "1c7ff99d2b2ca31c7155d26cf776aff59d64028286b9f62da05fc1c2a9a6bf7a"
+  }
+ ]
+}
