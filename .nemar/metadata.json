@@ -1,11 +1,49 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
+  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. Participants discriminated target and non-target stimuli presented from five spatially distributed speakers with varying inter-stimulus intervals. The dataset includes preprocessed EEG data acquired at 250 Hz and downsampled to 100 Hz from 60 channels, with documented best-subject performance metrics of 100% accuracy and 25.2 bits/min information transfer rate.",
+  "methods_description": "EEG data were acquired using a Brain Products 128-channel amplifier at 250 Hz sampling rate from 60 channels with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Auditory stimuli consisted of 40ms complex sounds from bandpass-filtered white noise with tone overlay, presented from five speakers with 45-degree spacing. Three experimental conditions were tested: C300 (300ms inter-stimulus interval), C175 (175ms ISI), and C300s (300ms ISI, single speaker). Preprocessing included analog bandpass filtering (0.1-250 Hz), notch filtering at 50 Hz, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels).",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Martijn Schreuder": {},
     "Benjamin Blankertz": {},
     "Michael Tangermann": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Auditory Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "oddball paradigm"
+    },
+    {
+      "term": "spatial hearing"
+    },
+    {
+      "term": "auditory BCI"
+    },
+    {
+      "term": "multi-class"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2011.00112",
@@ -14,11 +52,6 @@
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000234",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000234",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -36,6 +69,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000234",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -63,55 +101,22 @@
       "award_number": "01GQ0850"
     }
   ],
-  "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
-  "license": "CC-BY-NC-ND-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "4.9 GB (43 files)"
+    "17.7 GB (64 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. The dataset includes 60-channel EEG data acquired at 250 Hz (downsampled to 100 Hz) with preprocessed P300 event-related potentials elicited by target and non-target auditory stimuli presented from five spatially distributed speakers. This dataset demonstrates high classification accuracy (90% mean, up to 100% for best subjects) and information transfer rates suitable for auditory BCI-based communication and speller applications.",
-  "methods_description": "EEG data were acquired using a Brain Products 128-channel amplifier at 250 Hz sampling rate from 60 channels with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Online analog bandpass filtering (0.1-250 Hz) was applied during acquisition. Preprocessing included offline bandpass filtering (0.1-250 Hz, Chebyshev II order 8), 50 Hz notch filtering, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels). Subjects performed an offline auditory oddball task with three conditions varying inter-stimulus interval (300 ms, 175 ms) and speaker configuration, responding to target stimuli from designated spatial locations via mental counting or keypress.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "auditory oddball"
-    },
-    {
-      "term": "spatial hearing"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "auditory BCI"
-    },
-    {
-      "term": "multi-class"
-    },
-    {
-      "term": "oddball paradigm"
-    }
-  ],
-  "source_hash": "28e0f442dfd347f21fbc4b2feb8e8aba8f5781b5e885f2e76a283737e72edd25"
+  "source_hash": "219dc9b7aebe64e61c3eef50ba094d02a1dc20d5df947671b2362f07d06858d4"
 }
