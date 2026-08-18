@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
-  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. Participants discriminated target and non-target stimuli presented from five spatially distributed speakers with varying inter-stimulus intervals. The dataset includes preprocessed EEG data acquired at 250 Hz and downsampled to 100 Hz from 60 channels, with documented best-subject performance metrics of 100% accuracy and 25.2 bits/min information transfer rate.",
-  "methods_description": "EEG data were acquired using a Brain Products 128-channel amplifier at 250 Hz sampling rate from 60 channels with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Auditory stimuli consisted of 40ms complex sounds from bandpass-filtered white noise with tone overlay, presented from five speakers with 45-degree spacing. Three experimental conditions were tested: C300 (300ms inter-stimulus interval), C175 (175ms ISI), and C300s (300ms ISI, single speaker). Preprocessing included analog bandpass filtering (0.1-250 Hz), notch filtering at 50 Hz, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels).",
+  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. Participants discriminated target and non-target stimuli presented from five spatially distributed speakers with varying inter-stimulus intervals, yielding preprocessed data suitable for P300-based BCI research and offline classification studies.",
+  "methods_description": "EEG data were acquired at 250 Hz using a 128-channel Brain Products amplifier with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Stimuli consisted of 40ms complex sounds from bandpass-filtered white noise presented from five speakers with 45-degree spacing. Three experimental conditions were tested: C300 (300ms ISI), C175 (175ms ISI), and C300s (300ms ISI, single speaker). Preprocessing included bandpass filtering (0.1-250 Hz), 50 Hz notch filtering, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels).",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,14 +16,28 @@
       "term": "EEG"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "P300"
     },
     {
-      "term": "Auditory Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
+      "term": "auditory BCI"
+    },
+    {
+      "term": "spatial hearing"
+    },
+    {
+      "term": "oddball paradigm"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "BNCI"
+    },
+    {
+      "term": "BCI benchmark"
+    },
+    {
+      "term": "offline classification"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -32,16 +46,22 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "oddball paradigm"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
     },
     {
-      "term": "spatial hearing"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "auditory BCI"
-    },
-    {
-      "term": "multi-class"
+      "term": "Auditory Perception",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
     }
   ],
   "related_identifiers": [
@@ -118,5 +138,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "219dc9b7aebe64e61c3eef50ba094d02a1dc20d5df947671b2362f07d06858d4"
+  "source_hash": "787e9a0b7afa451b447e15351199ad86feb737aa0596aa8e647ad7028c88aead"
 }
