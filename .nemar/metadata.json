@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
-  "description": "The BNCI 2015-009 AMUSE dataset comprises EEG recordings from 21 healthy subjects performing an auditory oddball task using spatial hearing cues for brain-computer interface applications. Participants discriminated target and non-target stimuli presented from five spatially distributed speakers with varying inter-stimulus intervals, yielding preprocessed data suitable for P300-based BCI research and offline classification studies.",
-  "methods_description": "EEG data were acquired at 250 Hz using a 128-channel Brain Products amplifier with Ag/AgCl electrodes in 10-20 montage, referenced to nose. Stimuli consisted of 40ms complex sounds from bandpass-filtered white noise presented from five speakers with 45-degree spacing. Three experimental conditions were tested: C300 (300ms ISI), C175 (175ms ISI), and C300s (300ms ISI, single speaker). Preprocessing included bandpass filtering (0.1-250 Hz), 50 Hz notch filtering, downsampling to 100 Hz, and threshold-based artifact rejection (>70 µV on ocular channels).",
+  "description": "EEG recordings from 21 participants performing an offline auditory multi-class spatial oddball (AMUSE) task for a P300-based brain-computer interface. Five loudspeakers in the frontal plane presented unique auditory stimuli, and spatial location served as the discriminating cue. Three conditions varied the inter-stimulus interval and speaker configuration. The data are 60-channel EEG with EOG, distributed in preprocessed form.",
+  "methods_description": "EEG was recorded with a Brain Products amplifier (60 EEG and 2 EOG channels, nose reference, 1000 Hz raw, 0.1-250 Hz analog bandpass). Participants attended to target stimuli from one of five speakers, either by mentally counting or by keypress. Data were low-pass filtered, downsampled to 100 Hz and epoched, and epochs with ocular deflections above 70 µV were rejected.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,10 +16,10 @@
       "term": "EEG"
     },
     {
-      "term": "P300"
+      "term": "auditory brain-computer interface"
     },
     {
-      "term": "auditory BCI"
+      "term": "P300"
     },
     {
       "term": "spatial hearing"
@@ -28,40 +28,14 @@
       "term": "oddball paradigm"
     },
     {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "BNCI"
-    },
-    {
-      "term": "BCI benchmark"
-    },
-    {
-      "term": "offline classification"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Auditory Perception",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
     }
   ],
   "related_identifiers": [
@@ -98,27 +72,28 @@
   ],
   "funding_references": [
     {
-      "funder_name": "FP7-ICT PASCAL2 Network of Excellence ICT-216886"
-    },
-    {
-      "funder_name": "European Commission",
+      "funder_name": "European ICT Programme (FP7)",
       "award_number": "FP7-224631"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "European ICT Programme (FP7)",
       "award_number": "FP7-216886"
     },
     {
-      "funder_name": "Deutsche Forschungsgemeinschaft",
+      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)",
       "award_number": "MU 987/3-1"
     },
     {
-      "funder_name": "Bundesministerium für Bildung und Forschung",
-      "award_number": "01IB001A"
+      "funder_name": "Bundesministerium für Bildung und Forschung (BMBF)",
+      "award_number": "FKZ 01IB001A"
     },
     {
-      "funder_name": "Bundesministerium für Bildung und Forschung",
-      "award_number": "01GQ0850"
+      "funder_name": "Bundesministerium für Bildung und Forschung (BMBF)",
+      "award_number": "FKZ 01GQ0850"
+    },
+    {
+      "funder_name": "FP7-ICT PASCAL2 Network of Excellence",
+      "award_number": "ICT-216886"
     }
   ],
   "resource_type_general": "Dataset",
@@ -127,7 +102,7 @@
     "eeg"
   ],
   "sizes": [
-    "17.7 GB (64 files)"
+    "16.49 GB (64 files)"
   ],
   "formats": [
     ".bdf",
