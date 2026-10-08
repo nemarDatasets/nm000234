@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-009 AMUSE (Auditory Multi-class Spatial ERP) dataset",
-  "description": "EEG recordings from 21 participants performing an offline auditory multi-class spatial oddball (AMUSE) task for a P300-based brain-computer interface. Five loudspeakers in the frontal plane presented unique auditory stimuli, and spatial location served as the discriminating cue. Three conditions varied the inter-stimulus interval and speaker configuration. The data are 60-channel EEG with EOG, distributed in preprocessed form.",
-  "methods_description": "EEG was recorded with a Brain Products amplifier (60 EEG and 2 EOG channels, nose reference, 1000 Hz raw, 0.1-250 Hz analog bandpass). Participants attended to target stimuli from one of five speakers, either by mentally counting or by keypress. Data were low-pass filtered, downsampled to 100 Hz and epoched, and epochs with ocular deflections above 70 µV were rejected.",
+  "description": "EEG recordings from 21 participants performing an offline auditory multi-class spatial oddball (P300) task for a brain-computer interface speller. Five frontal speakers with 45 degree spacing delivered unique 40 ms complex sounds under conditions varying in inter-stimulus interval (300 ms, 175 ms) and speaker configuration. Data comprise 60 EEG and 2 EOG channels, and were preprocessed and distributed through MOABB as BNCI 2015-009.",
+  "methods_description": "EEG was recorded with a Brain Products amplifier using Ag/AgCl electrodes at 1000 Hz and nose reference, then bandpass filtered (0.1-250 Hz), downsampled to 100 Hz, and cleaned with threshold-based artifact rejection (>70 µV deflection over ocular channels). Participants mentally counted target stimuli, or responded by keypress in one condition. Target direction was cued visually and by a stimulus from that location before each block.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,26 +16,21 @@
       "term": "EEG"
     },
     {
-      "term": "auditory brain-computer interface"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "spatial hearing"
-    },
-    {
-      "term": "oddball paradigm"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "P300"
+    },
+    {
+      "term": "auditory spatial oddball"
+    },
+    {
+      "term": "spatial hearing"
+    },
+    {
+      "term": "speller"
     }
   ],
   "related_identifiers": [
@@ -72,11 +67,11 @@
   ],
   "funding_references": [
     {
-      "funder_name": "European ICT Programme (FP7)",
+      "funder_name": "European ICT Programme",
       "award_number": "FP7-224631"
     },
     {
-      "funder_name": "European ICT Programme (FP7)",
+      "funder_name": "European ICT Programme",
       "award_number": "FP7-216886"
     },
     {
@@ -113,5 +108,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "787e9a0b7afa451b447e15351199ad86feb737aa0596aa8e647ad7028c88aead"
+  "source_hash": "ce54630a419862719741b2004641bdd23ce22953e0e4674bc5537819f3ff4682"
 }
